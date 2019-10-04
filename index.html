@@ -7,13 +7,52 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon.png">
+    <title>Simple Site</title>
     <style>
+        .hero-img {
+            width: 100%;
+            margin: 0 auto;
+        }
 
+        .hero-container {
+            padding: 40px;
+        }
+
+        .hero-text {
+            background-color: #3F3D56;
+            color: #6C63FF;
+            margin: 0;
+            padding: 25px;
+        }
+
+        .btn-custom {
+            background-color: #6C63FF;
+            color: #ffffff;
+        }
+
+        .btn-custom:hover {
+            background-color: #ffffff;
+            color: #3F3D56;
+            transition: .5s;
+        }
     </style>
   </head>
   <body>
+    <div class="row align-items-center hero-container">
+        <div class="col-md-6 text-center jumbotron hero-text">
+            <h1 class="display-4">Lorem Ipsum Dolor</h1>
+            <p class="lead text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Donec eget nulla dolor. Sed ac purus auctor, tincidunt mauris eu, volutpat ligula. Sed a leo libero.
+            </p>
+            <button type="button" class="btn btn-custom">Learn More</button>
+        </div>
+        <div class="col-md-6">
+            <img class="hero-img" src="assets/hero.png" />
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
