@@ -9,12 +9,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="css/animate.css">
     <title>Simple Site</title>
     <style>
-        .hero-img {
-            width: 100%;
-            margin: 0 auto;
-        }
 
         .hero-container {
             padding: 40px;
@@ -23,8 +20,9 @@
         .hero-text {
             background-color: #3F3D56;
             color: #6C63FF;
-            margin: 0;
-            padding: 25px;
+            padding: 40px;
+            margin-left: 20px;
+            margin-right: 20px;
         }
 
         .btn-custom {
@@ -37,20 +35,54 @@
             color: #3F3D56;
             transition: .5s;
         }
+
+        @media (max-width: 1200px) {
+
+            .hero-heading {
+                font-size: 30px;
+            }
+
+            .hero-desc {
+                font-size: 18px;
+            }
+
+            .hero-text {
+                padding: 20px;
+            }
+
+            .hero-img {
+                padding: 0;
+                margin: 0;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+
+            .hero-heading {
+                font-size: 25px;
+            }
+
+            .hero-desc {
+                font-size: 16px;
+            }
+
+        }
+
     </style>
   </head>
   <body>
     <div class="row align-items-center hero-container">
-        <div class="col-md-6 text-center jumbotron hero-text">
-            <h1 class="display-4">Lorem Ipsum Dolor</h1>
-            <p class="lead text-white">
+        <div class="col-md text-center jumbotron hero-text animated slideInLeft order-md-0 order-1">
+            <h1 class="display-5 text-uppercase font-weight-bold hero-heading">Lorem Ipsum Dolor</h1>
+            <p class="lead text-white hero-desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Donec eget nulla dolor. Sed ac purus auctor, tincidunt mauris eu, volutpat ligula. Sed a leo libero.
+                Donec eget nulla dolor. Sed ac purus auctor, tincidunt mauris eu, volutpat ligula.
             </p>
             <button type="button" class="btn btn-custom">Learn More</button>
         </div>
-        <div class="col-md-6">
-            <img class="hero-img" src="assets/hero.png" />
+        <div class="col-md animated slideInRight hero-img order-md-1 order-0">
+            <img class="img-fluid" src="assets/hero.png" />
         </div>
     </div>
 
