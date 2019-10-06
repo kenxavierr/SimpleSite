@@ -49,7 +49,7 @@
         }
 
         .what-container {
-            padding: 80px;
+            padding: 50px;
         }
 
         .card-img {
@@ -71,8 +71,9 @@
              color: #ffffff;
         }
 
-        .about-img {
-             width: 80%;
+        .about-text {
+              background-color: #3F3D56;
+              padding: 20px;
         }
 
         @media (max-width: 1200px) {
@@ -81,11 +82,15 @@
                 font-size: 30px;
             }
 
-            .hero-desc {
+            .about-heading {
+                font-size: 25px;
+            }
+
+            .hero-desc, .about-desc {
                 font-size: 18px;
             }
 
-            .hero-text {
+            .hero-text, .about-text {
                 padding: 20px;
             }
 
@@ -146,7 +151,7 @@
         <div class="collapse navbar-collapse" id="mainNav">
             <div class="navbar-nav custom-nav">
                 <a href="#what-section" class="nav-item nav-link">What We Do</a>
-                <a href="#" class="nav-item nav-link">About Us</a>
+                <a href="#about-section" class="nav-item nav-link">About Us</a>
                 <a href="#" class="nav-item nav-link">Contact Us</a>
             </div>
         </div>
@@ -186,7 +191,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg nimated slideInUp card-col">
+            <div class="col-md-6 col-lg card-col">
                 <div class="card custom-card align-items-center mb-sm-4">
                     <img src="assets/what-2.svg" class="img-fluid card-img">
                     <div class="card-block">
@@ -214,14 +219,14 @@
     </div>
     <!-- What We Do Section -->
     <!-- About Us Section -->
-    <div class="container-fluid about-container">
+    <div class="container-fluid about-container" id="about-section">
         <div class="row align-items-center py-lg-3">
-          <div class="col-md col-lg">
+          <div class="col-lg mb-md-4">
               <img src="assets/about.svg" class="img-fluid about-img">
           </div>
-          <div class="col-md col-lg">
-              <h2 class="font-weight-bold">Lorem Ipsum</h2>
-              <p class="lead">
+          <div class="col-lg about-text card ml-lg-4">
+              <h2 class="font-weight-bold about-heading">Lorem Ipsum</h2>
+              <p class="lead about-desc">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Duis finibus vestibulum lacus, vitae tincidunt magna dapibus
                   ornare. Interdum et malesuada fames ac ante ipsum primis in
