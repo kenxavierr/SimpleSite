@@ -49,7 +49,7 @@
         }
 
         .what-container {
-            padding: 60px;
+            padding: 50px;
         }
 
         .card-img {
@@ -65,17 +65,32 @@
              height: 100%;
         }
 
+        .about-container {
+             background-color: #6C63FF;
+             padding: 60px;
+             color: #ffffff;
+        }
+
+        .about-text {
+              background-color: #3F3D56;
+              padding: 20px;
+        }
+
         @media (max-width: 1200px) {
 
             .hero-heading {
                 font-size: 30px;
             }
 
-            .hero-desc {
+            .about-heading {
+                font-size: 25px;
+            }
+
+            .hero-desc, .about-desc {
                 font-size: 18px;
             }
 
-            .hero-text {
+            .hero-text, .about-text {
                 padding: 20px;
             }
 
@@ -136,7 +151,7 @@
         <div class="collapse navbar-collapse" id="mainNav">
             <div class="navbar-nav custom-nav">
                 <a href="#what-section" class="nav-item nav-link">What We Do</a>
-                <a href="#" class="nav-item nav-link">About Us</a>
+                <a href="#about-section" class="nav-item nav-link">About Us</a>
                 <a href="#" class="nav-item nav-link">Contact Us</a>
             </div>
         </div>
@@ -156,12 +171,12 @@
             <button type="button" class="btn btn-custom">Learn More</button>
         </div>
         <div class="col-md hero-img order-md-1 order-0">
-            <img class="img-fluid" src="assets/hero.png" />
+            <img src="assets/hero.png" class="img-fluid">
         </div>
     </div>
     <!-- Hero Section -->
     <!-- What We Do Section -->
-    <div class="container-fluid what-container bg-custom" id="what-section">
+    <div class="container-fluid what-container bg-custom"  id="what-section">
         <h2 class="display-5 text-center font-weight-bold pb-4">Lorem Ipsum</h2>
         <div class="row">
             <div class="col-md-6 col-lg card-col">
@@ -176,7 +191,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg nimated slideInUp card-col">
+            <div class="col-md-6 col-lg card-col">
                 <div class="card custom-card align-items-center mb-sm-4">
                     <img src="assets/what-2.svg" class="img-fluid card-img">
                     <div class="card-block">
@@ -202,6 +217,35 @@
             </div>
         </div>
     </div>
+    <!-- What We Do Section -->
+    <!-- About Us Section -->
+    <div class="container-fluid about-container" id="about-section">
+        <div class="row align-items-center py-lg-3">
+          <div class="col-lg mb-md-4">
+              <img src="assets/about.svg" class="img-fluid about-img">
+          </div>
+          <div class="col-lg about-text card ml-lg-4">
+              <h2 class="font-weight-bold about-heading">Lorem Ipsum</h2>
+              <p class="lead about-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Duis finibus vestibulum lacus, vitae tincidunt magna dapibus
+                  ornare. Interdum et malesuada fames ac ante ipsum primis in
+                  faucibus. In a mauris lectus.
+
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Duis finibus vestibulum lacus, vitae tincidunt magna dapibus
+                  ornare. Interdum et malesuada fames ac ante ipsum primis in
+                  faucibus. In a mauris lectus.
+
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Duis finibus vestibulum lacus, vitae tincidunt magna dapibus
+                  ornare. Interdum et malesuada fames ac ante ipsum primis in
+                  faucibus. In a mauris lectus.
+              </p>
+          </div>
+        </div>
+    </div>
+    <!-- About Us Section -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
