@@ -12,6 +12,10 @@
     <title>Simple Site</title>
     <style>
 
+        body {
+            overflow-x: hidden;
+        }
+
         .navbar-icon {
             height: 50px;
             width: 50px;
@@ -48,6 +52,10 @@
             color: #ffffff;
         }
 
+        .bg-alternate {
+            background-color: #cdcdcd;
+        }
+
         .what-container {
             padding: 50px;
         }
@@ -58,11 +66,12 @@
         }
 
         .custom-card {
-             background-color: #cdcdcd;
              padding: 20px;
              text-align: center;
              color: #3F3D56;
              height: 100%;
+             border: none;
+             background-color: unset;
         }
 
         .about-container {
@@ -74,6 +83,12 @@
         .about-text {
               background-color: #3F3D56;
               padding: 20px;
+        }
+
+        .about-other-container {
+              background-color: #ffffff;
+              padding: 60px;
+              color: #ffffff;
         }
 
         @media (max-width: 1200px) {
@@ -162,7 +177,7 @@
     <!-- Navigation -->
     <!-- Hero Section -->
     <div class="row align-items-center hero-container">
-        <div class="col-md text-center jumbotron hero-text order-md-0 order-1">
+        <div class="col-lg text-center jumbotron hero-text order-lg-0 order-1">
             <h1 class="display-5 text-uppercase font-weight-bold hero-heading">Lorem Ipsum Dolor</h1>
             <p class="lead text-white hero-desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -170,13 +185,13 @@
             </p>
             <button type="button" class="btn btn-custom">Learn More</button>
         </div>
-        <div class="col-md hero-img order-md-1 order-0">
+        <div class="col-lg hero-img order-lg-1 order-0">
             <img src="assets/hero.png" class="img-fluid">
         </div>
     </div>
     <!-- Hero Section -->
     <!-- What We Do Section -->
-    <div class="container-fluid what-container bg-custom"  id="what-section">
+    <div class="container-fluid what-container bg-alternate"  id="what-section">
         <h2 class="display-5 text-center font-weight-bold pb-4">Lorem Ipsum</h2>
         <div class="row">
             <div class="col-md-6 col-lg card-col">
@@ -220,23 +235,13 @@
     <!-- What We Do Section -->
     <!-- About Us Section -->
     <div class="container-fluid about-container" id="about-section">
-        <div class="row align-items-center py-lg-3">
-          <div class="col-lg mb-md-4">
-              <img src="assets/about.svg" class="img-fluid about-img">
+        <div class="row align-items-center py-lg-4">
+          <div class="col-lg mb-md-4 mx-4 py-sm-4 my-4">
+              <img src="assets/noted.svg" class="img-fluid about-img">
           </div>
-          <div class="col-lg about-text card ml-lg-4">
+          <div class="col-lg about-text card ml-sm-4">
               <h2 class="font-weight-bold about-heading">Lorem Ipsum</h2>
               <p class="lead about-desc">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Duis finibus vestibulum lacus, vitae tincidunt magna dapibus
-                  ornare. Interdum et malesuada fames ac ante ipsum primis in
-                  faucibus. In a mauris lectus.
-
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Duis finibus vestibulum lacus, vitae tincidunt magna dapibus
-                  ornare. Interdum et malesuada fames ac ante ipsum primis in
-                  faucibus. In a mauris lectus.
-
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Duis finibus vestibulum lacus, vitae tincidunt magna dapibus
                   ornare. Interdum et malesuada fames ac ante ipsum primis in
@@ -245,7 +250,30 @@
           </div>
         </div>
     </div>
+    <div class="container-fluid about-other-container" id="about-section">
+        <div class="row align-items-center py-lg-4">
+          <div class="col-lg about-text card ml-lg-5 my-4 order-lg-0 order-1">
+              <h2 class="font-weight-bold about-heading">Lorem Ipsum</h2>
+              <p class="lead about-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Duis finibus vestibulum lacus, vitae tincidunt magna dapibus
+                  ornare. Interdum et malesuada fames ac ante ipsum primis in
+                  faucibus. In a mauris lectus.
+              </p>
+          </div>
+          <div class="col-lg mb-lg-4 mx-lg-4 order-lg-1 order-0">
+              <img src="assets/about-2.svg" class="img-fluid about-img">
+          </div>
+        </div>
+    </div>
     <!-- About Us Section -->
+    <!-- Footer Section -->
+      <footer class="py-4 bg-custom">
+          <div class="container text-center">
+            <span>Copyright &copy; Lorem Ipsum</span>
+          </div>
+      </footer>
+    <!-- Footer Section -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
